@@ -1,0 +1,104 @@
+body { background-color: #6B4226;
+		margin-left: 1em;
+		margin-right: 1em;
+}
+
+main { background-color: #FAF3DD;
+	   font-family: "Trebuchet MS", arial, sans-serif;
+	   color: #DDA15E;
+	   margin-bottom: 1em;
+	   margin-top: 1em;
+	   padding-top: .25em;
+	   padding-left: 1em;
+	   padding-right: 1em;
+	   padding-bottom: .25em;
+}
+
+header { background-color: #6B4226;
+		background-image: url("Pictures/websiteheader.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	 	color: #DDA15E;
+		font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+		font-size: 30pt;
+		text-align: right;
+		height: 200px;
+		margin-bottom: .4em;
+}
+
+/*REQUIRED: dynamic styling of navigation, 3-5-25*/
+
+nav { text-align: center;
+	  font-weight: bold;
+	  background-color: #FAF3DD;
+	  color: #DDA15E;
+	  padding-top: 0.5em;
+	  padding-bottom: 0.5em;
+	  height: auto;
+	  display: block;
+}
+
+nav a { text-decoration: none;  
+}
+
+nav ul { list-style-type: none; 
+		 margin: 0; 
+		 padding-right: 2em; 
+		 font-size: 1.2em;
+}
+
+nav li { display: inline;
+		padding-left: 2em;
+}
+
+nav a:link { color: #DDA15E; }
+nav a:visited { color: #DDA15E; }
+nav a:hover { color: #62BD69; text-decoration: underline; }
+
+aside { text-align: right;
+}
+
+footer { font-size: small;
+	text-align: center;
+	font-family: "Trebuchet MS", arial, sans-serif;
+	background-color: #FAF3DD;
+	color: #DDA15E;
+	display: flex;
+	flex-direction: column;
+}
+
+#footernav { font-size: 8pt;
+			 font-style: italic;
+}
+
+form { display: grid;
+	   grid-template-rows: auto;
+	   grid-template-columns: 6em 1fr;
+	   gap: 1em;
+	   font-family: "Trebuchet MS", arial, sans-serif;
+	   width: 60%;
+	   min-width: 10em;
+	   max-width: 20em;
+	   padding: 2em; 
+}
+
+input[type="file"], input[type="submit"], input[type="reset"] { grid-column: span 2;
+															   margin-bottom: .2em;
+}
+
+
+/*REQUIRED: media query 3 of 3, 3-5-25*/
+
+@media (max-width: 500px) {
+	
+	header { text-align: center;
+			 font-size: 24pt;
+			 background-image: none;
+			 background-color: #FAF3DD;
+			 height: 150px;
+	}
+	h2 { text-align:center;
+	}
+	
+}
+			 

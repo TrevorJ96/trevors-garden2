@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Required: Head Semantic Element, 3-5-25-->
+
+<head>
+	<meta charset="UTF-8">
+	
+<!--Required: Title Metadata, 3-5-25-->
+	
+	<title>Trevor's Garden - Timeline</title>
+	
+<!--Required: Viewport Metadata, 3-5-25-->	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!--Required: Description Metadata, 3-5-25-->	
+	
+	<meta name="description" content="Tell me what you think about my plants and share one of yours if you would like.">
+	
+<!--Required: Author Metadata, 3-5-25-->	
+	
+	<meta name="author" content="Trevor Jones">
+	
+<!--Required: Keywords Metadata, 3-5-25-->
+	
+	<meta name="keywords" content="contact, picture sharing, query">
+	
+	<link href="plants.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Trevor's Garden</h1>
+	</header>
+	<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="currentplants.html">Current Plants</a></li>
+		<li><a href="species.html">About the Species</a></li>
+		<li><a href="care.html">Basic Care</a></li>
+		<li><a href="timeline.html">Timeline</a></li>
+	</ul>
+	</nav>
+	
+<!--Required: Main Semantic Element, 3-5-25-->	
+	
+	<main>
+		<h2>Send me your plant pictures or queries!</h2> 		
+		<div>
+		
+			<!--Required: Fieldset element, 3-5-25-->
+		
+			<fieldset>
+		
+				<!--Required: Legend element, 3-5-25-->
+		
+				<legend>Tell me what you think and share if you want!</legend>
+		
+				<!--Required: Required: Form Element, 3-5-25-->
+
+				<form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+					<label for="myName">Name:</label>
+				
+					<!--Required: Input Element 1, 3-5-25-->				<!--Required: required Element, 3-5-25-->
+				
+					<input type="text" name="myName" id="myName" required>
+					
+					<label for="myEmail">E-mail:</label>
+				
+					<!--Required: Input Element 2, 3-5-25-->
+				
+					<input type="email" name="myEmail"
+						id="myEmail" required>
+					
+					<label for="yourfavplant">Your Favorite Plant</label>
+				
+					<!--Required: Select Element, 3-5-25-->
+				
+						<select size="1" name="yourfavplant" id="yourfavplant">
+							<option>Select your favorite plant</option>
+							<option value="Buddy">Buddy</option>
+							<option value="Starlord">Starlord</option>
+							<option value="Shaun">Shaun</option>
+							<option value="Waloe">Waloe</option>
+							<option value="Starlordjr">Starlord Jr.</option>
+							<option value="Lovely">Lovely</option>
+							<option value="Bahseal">Bahseal</option>
+							<option value="Lucky">Lucky</option>
+						</select> 
+				
+					<label for="fav">What kind of feedback is this?</label><br>
+				
+					<!--Required: Radio Button Element 3, 3-5-25-->
+				
+				
+						<input type="radio" name="fav" id="question" value="QU"> Question<br>
+						<input type="radio" name="fav" id="picture" value="PI"> Pictures<br>
+						<input type="radio" name="fav" id="suggestion" value="Su"> Suggestion<br> 
+						<input type="radio" name="fav" id="joke" value="JK"> Do better...<br> 
+
+					<!--Required: Input Element 3, 3-5-25-->
+					
+					<label for="myComments">Comments:</label>
+					<textarea name="myComments" id="myComments"
+							rows="2" cols="20">
+					</textarea>
+				
+					<input type="file" name="plantphotos" id="plantphotos" accept="image/*">
+
+					<!--Required: Submit Element, 3-5-25-->
+				
+					<input type="submit" value="Send Now">
+				
+					<!--Required: Reset Element, 3-5-25-->
+				
+					<input type="reset">
+				</form>
+			</fieldset>	
+		</div>
+	</main>
+	
+<!--REQUIRED: Footer Semantic Element, 3-5-25-->	
+	
+	<footer>
+		<div>
+		<nav id="footernav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="currentplants.html">Current Plants</a></li>
+				<li><a href="species.html">About the Species</a></li>
+				<li><a href="care.html">Basic Care</a></li>
+				<li><a href="timeline.html">Timeline</a></li> 
+			</ul>
+		</nav>
+		</div>
+		<div>
+			<p>&copy; Trevor Jones 2025</p>
+		</div>
+	</footer>
+</body>
+</html>
